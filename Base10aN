@@ -1,0 +1,23 @@
+package domain;
+
+import java.util.Scanner;
+
+
+public class Base10N {
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        //Solicitar un nuero al usiario
+        System.out.print("ingresa un numero en decimal: ");
+        int decimal= teclado.nextInt();
+        //Convercion a binario, octal, hexadecimal
+        String binario= Integer.toBinaryString(decimal);
+        String octal= Integer.toBinaryString(decimal);
+        String hexa = Integer.toBinaryString(decimal);
+        
+        //imprimir valores
+        System.out.println("El numero decimal: "+ decimal+ " es equivalente a:");
+        System.out.println("Binario igual "+binario);
+        System.out.println("octal igual "+octal);
+        System.out.println("hexadecimal igual "+hexa);
+    }
+}
