@@ -1,0 +1,27 @@
+
+package domain;
+
+import java.util.Scanner;
+
+public class BaseNa10 {
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner(System.in);
+        System.out.println("Ingresa un numero binario: ");
+        String binario= teclado.next();
+        int decimal=Integer.parseInt(binario,2);
+         System.out.println(binario +" es equivalente a "+decimal+" base 10");
+         
+         //Octal
+         System.out.println("Ingresa un numero octal: ");
+         String octal= teclado.next();
+         decimal=Integer.parseInt(octal,2);
+         System.out.println(octal +" es equivalente a "+decimal+" base 10");
+         
+         //Hexadecimal
+         System.out.println("Ingresa un numero hexa: ");
+         String hexa= teclado.next();
+         decimal=Integer.parseInt(binario,2);
+         System.out.println(hexa +" es equivalente a "+decimal+" base 10");
+        
+    }
+}
